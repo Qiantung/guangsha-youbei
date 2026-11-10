@@ -1,0 +1,22 @@
+@font-face{font-family:'LXGW WenKai';font-style:normal;font-weight:500;font-display:swap;src:url('../node_modules/@fontsource/lxgw-wenkai/files/lxgw-wenkai-latin-500-normal.woff2') format('woff2')}
+:root {
+  --primary: #91ac9e;
+  --accent: #e98173;
+  --surface: #f8f4ea;
+  --paper: #f1e7d5;
+  --outline: #b4a79a;
+  --sky: #91b8d9;
+  --lavender: #b4a2c3;
+  --mint: #bbd8cb;
+  --yellow: #e6ca78;
+  --ink: #514b47;
+  --muted: #746f68;
+  --green-ink: #45695b;
+  --coral-ink: #944839;
+  --radius-shell: 32px;
+  --radius-panel: 24px;
+  --radius-control: 12px;
+  --space: 8px;
+  --font-story: 'LXGW WenKai', 'KaiTi', 'STKaiti', serif;
+  --font-ui: 'Nunito', 'Microsoft YaHei', 'PingFang SC', 'LXGW WenKai', sans-serif;
+}

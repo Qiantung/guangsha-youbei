@@ -1,0 +1,63 @@
+{
+  "weekly_activity_threshold_minutes": 150,
+  "xiaomi": {
+    "enabled": false,
+    "aggregated_csv": "private/hlth_center_aggregated_fitness_data.csv",
+    "fitness_csv": "private/hlth_center_fitness_data.csv",
+    "source_group_index": null,
+    "sleep_mapping": {
+      "confirmed": false,
+      "unit": null,
+      "basis": null
+    },
+    "activity_mapping": {
+      "confirmed": false,
+      "unit": null,
+      "semantic": null,
+      "basis": null
+    }
+  },
+  "source_type": "xiaomi",
+  "huawei": {
+    "enabled": false,
+    "files": [
+      {
+        "path": "private/huawei_daily.csv",
+        "encoding": "utf-8-sig",
+        "delimiter": ",",
+        "granularity": "daily_summary",
+        "date_column": "日期",
+        "date_format": "%Y-%m-%d",
+        "timezone": "Asia/Shanghai",
+        "updated_column": null,
+        "updated_format": null,
+        "identity_columns": [],
+        "source_group_index": null,
+        "single_source_confirmed": false,
+        "metrics": {
+          "resting_heart_rate_bpm": {
+            "column": "静息心率(次/分)",
+            "unit": "bpm",
+            "semantic": "resting_heart_rate",
+            "confirmed": false,
+            "basis": null
+          },
+          "moderate_activity_minutes": {
+            "column": "活动时长(分钟)",
+            "unit": "minutes",
+            "semantic": "moderate_activity",
+            "confirmed": false,
+            "basis": null
+          },
+          "sleep_duration_hours": {
+            "column": "睡眠总时长(分钟)",
+            "unit": "minutes",
+            "semantic": "sleep_duration",
+            "confirmed": false,
+            "basis": null
+          }
+        }
+      }
+    ]
+  }
+}

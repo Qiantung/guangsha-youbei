@@ -1,0 +1,19 @@
+{
+  "version": "demo-2026-10-09-v1",
+  "notice": "楼层名义率为国内标准参考；曲线、楼层转换、健康系数与成本为人为模拟假设，非实证参数。",
+  "fragility": {
+    "brick": {"medians_g": [0.08, 0.18, 0.35, 0.65], "beta": 0.60},
+    "frame": {"medians_g": [0.12, 0.28, 0.55, 0.95], "beta": 0.60},
+    "shear_wall": {"medians_g": [0.16, 0.36, 0.70, 1.20], "beta": 0.60}
+  },
+  "fortification_factors": {"6": 0.8, "7": 1.0, "8": 1.25, "9": 1.5},
+  "floor_transition": [[1,0,0,0,0],[0.1,0.8,0.1,0,0],[0,0.1,0.7,0.2,0],[0,0,0.1,0.7,0.2],[0,0,0,0.1,0.9]],
+  "injury_rates": [0, 0.0000125, 0.00005, 0.000125, 0.007142857142857143],
+  "death_rates": [0, 0, 0, 0.0000125, 0.00125],
+  "health_log_or": {"injury": [0.18,0.12,-0.15,0.30], "death": [0.25,0.15,-0.20,0.40]},
+  "loss_ratios": [0,0.05,0.20,0.55,1.0],
+  "unit_cost_yuan_m2": 3000,
+  "casualty_costs": {"injury": 50000, "death": 500000},
+  "policy": {"property_premium": 300, "casualty_premium": 200, "k": 0.6, "cap": 0.10},
+  "catalog": [{"id":"whistle","name":"应急哨","cost":5,"stock":50,"description":"便携求救工具；库存与价格为模拟"},{"id":"battery","name":"备用电池","cost":15,"stock":30,"description":"应急照明备件；不含实际配送"},{"id":"gloves","name":"防护手套","cost":20,"stock":20,"description":"防灾准备物资；仅模拟兑换"},{"id":"torch","name":"应急手电","cost":30,"stock":20,"description":"应急照明；成本为模拟全成本"}]
+}

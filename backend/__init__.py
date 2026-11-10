@@ -1,0 +1,1 @@
+"""Local earthquake demonstration services."""
